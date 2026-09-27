@@ -817,3 +817,231 @@ Format: https://img.shields.io/badge/LABEL-MESSAGE-COLOR.svg
 Colors: blue, green, red, orange, yellow, purple, brightgreen
 
 Custom color: #FF5733 (hex code)
+# ============================================================
+# AI Enterprise Digital Twin Decision Agent
+# Git Ignore Rules
+# ============================================================
+
+# ============================================================
+# 🐍 PYTHON
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================================
+# 🔐 ENVIRONMENT / SECRETS (IMPORTANT!)
+# ============================================================
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+secrets/
+*.pem
+*.key
+credentials.json
+service-account.json
+
+# ============================================================
+# 🤖 RL MODELS & LARGE FILES
+# ============================================================
+*.zip
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.joblib
+backend/app/rl_agent/models/*.zip
+backend/app/rl_agent/models/*.pkl
+backend/app/rl_agent/models/*.pt
+backend/app/rl_agent/logs/
+backend/app/rl_agent/tensorboard/
+
+# Keep the folder but ignore contents
+!backend/app/rl_agent/models/.gitkeep
+
+# ============================================================
+# ⚛️ NODE / REACT / VITE
+# ============================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+.yarnrc.yml
+
+# Vite
+frontend/.vite/
+frontend/dist-ssr/
+
+# ============================================================
+# 🗄️ DATABASE
+# ============================================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+database/backups/*.sql
+database/backups/*.dump
+database/*.dump
+
+# Keep backup folder
+!database/backups/.gitkeep
+
+# ============================================================
+# 📊 DATA OUTPUTS / TEMP
+# ============================================================
+data/output/
+data/temp/
+data/cache/
+data/exports/
+*.csv
+*.parquet
+*.feather
+logs/
+*.log
+
+# ============================================================
+# 🧠 ML / DATA SCIENCE
+# ============================================================
+.ipynb_checkpoints
+*.h5
+*.keras
+*.pb
+saved_models/
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# ============================================================
+# 🎨 IDE / EDITOR
+# ============================================================
+.vscode/
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# 💻 OS FILES
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================
+# 🧪 TESTING / CACHING
+# ============================================================
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.tox/
+.cache/
+*.pyc
+
+# ============================================================
+# 🐳 DOCKER / DEPLOYMENT
+# ============================================================
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================================
+# 📦 BUILDS / ARCHIVES
+# ============================================================
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ============================================================
+# 📝 TEMP FILES
+# ============================================================
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
